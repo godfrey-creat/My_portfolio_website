@@ -1,0 +1,150 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    background-image:url(background.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height:100vh;
+    color:white;
+    font-size: 38px;
+}
+#head{
+    margin-left:40px;
+}
+span{
+    font-style: italic;
+}
+#overlay{
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height:100vh;
+
+}
+h1,h2,h3,h4{
+    font-family: 'Roboto Slab', serif;
+}
+nav{
+    width:100%;
+    font-size:18px;
+    position:absolute;
+    top:0;
+    text-align: right;
+}
+li{
+    list-style: none;
+}
+nav ul li{
+    display:inline-block;
+    padding-right:60px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+#about-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.aboutme{
+    line-height:28px;
+    margin:100px 200px 0 100px;
+    
+}
+.aboutme img{
+    float:left;
+    width:30%;
+    border-radius:5px;
+    margin-right:25px;
+}
+progress{
+    width: 40%;
+    height:30px;
+    background-color:green;
+}
+
+#portfolio{
+    grid-gap: 5px;
+    grid-row-gap: ;
+}
+#portfolio img{
+    width:100%;
+}
+#portfolio section{
+    position:relative;
+}
+.text1,.text2,.text3,.text4,.text5,.text6{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    text-align: left;
+    display: none;
+    font-size:24px;
+    z-index: 2;
+    padding:5% 20%;
+    padding-right: 0;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.mytext{
+    position: absolute;
+    border: solid 2px white;
+    color: white;
+    top:5px;
+    left:5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin:20% 20%;
+    padding:2%;
+}
+.mytext:hover{
+    background-color: white;
+    color:black;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.7);
+}
+footer{
+    background-color: black;
+    color:white;
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+}
+#socialapps img{
+    width:40px;
+    margin:20px 30px;
+}
+#socialapps img:hover{
+    background-color:rgba(100,100,100,0.8);
+    border-radius: 5px;
+}
+.col-lg-4 img{
+    height:35vh;
+}
+@media only screen and (max-width:800px){
+    nav{
+        text-align:left;
+    }
+    nav ul li{
+        padding-right:25px;
+    }
+    .aboutme img{
+        width:100%;
+        float: none;
+    }
+   .aboutme{
+       margin:30px 20px;
+   }
+
+}
